@@ -1,24 +1,43 @@
-.body
-{
+.body {
       background-image: url('https://images.unsplash.com/photo-1633596683562-4a47eb4983c5?q=80&w=1032&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
       background-size: cover;
-}
-
-.nav 
-{
-      position: fixed; bottom: 5; left: 50%;
-      transform: translateX(-50%); display: flex; justify-content: space-around;
-      width: auto; 
-      background-color: rgb(0,0,0,0.3); padding: 0 10px; height: 3em; border-radius: 10px;
+  }
+  
+  .nav {
+      position: fixed;
+      bottom: 5px;
+      left: 50%;
+      transform: translateX(-50%);
+      display: flex;
+      justify-content: space-around;
+      width: auto;
+      background-color: rgba(0, 0, 0, 0.3);
+      padding: 5px;
+      border-radius: 10px;
       backdrop-filter: blur(10px);
-}
-.nav_item 
-{
-      color: white; padding: 10px; font-size: medium; align-self: flex-end;
-      transition: all 0.1s ease;
-}
-.nav_item:hover
-{
+      transition: height 0.3s ease; /* Add transition for smooth height changes */
+  }
+  .nav_item img {
+      max-height: 5vh;
+      transition: transform 0.2s ease; /* Add transition for smooth scaling */
+  }
+  .nav_item:hover img {
+      transform: scale(1.6);
+  }
+  .nav_item:active img{
+      transform: scale(1);
+  }
+  .nav_item {
+      color: white;
+      padding: 2px;
+      font-size: medium;
+      align-self: flex-end;
+      transition: all 0.3s ease; /* Add transition for smooth scaling */
+  }
+  .nav_item:hover {
       font-size: x-large;
-}
-    
+  }
+  .current
+  {
+      transform: scale(1.3);
+  }
