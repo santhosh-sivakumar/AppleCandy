@@ -1,4 +1,4 @@
 # Applecandy
 Hey! This is my Repository for my Portfolio....
 
-![image](https://github.com/santhosh-sivakumar/AppleCandy/assets/153372758/4152a06f-16b3-49e3-b783-a8a2786fa3c3)
+<div class="tenor-gif-embed" data-postid="24408873" data-share-method="host" data-aspect-ratio="0.940625" data-width="100%"><a href="https://tenor.com/view/hello-gif-24408873">Hello Sticker</a>from <a href="https://tenor.com/search/hello-stickers">Hello Stickers</a></div> <script type="text/javascript" async src="https://tenor.com/embed.js"></script>
