@@ -8,7 +8,7 @@
 body
 {
     width: 100vw; height: 100vh;
-    background-image: linear-gradient(to right, #4b6cb7, #4b6cb7,  #000000, #000000);
+    background-image: linear-gradient(to right, #bbb, #bbb, #bbb, #000, #000, #000);
     background-size: 300%; background-position: left;
 }
 
@@ -64,7 +64,7 @@ body
 {
     position: fixed; top: 5.5vh; left: 7vh; bottom: 2vh; right: 7vh; z-index: 10; padding: 1.5vw;
     background-color: #ffffff15; backdrop-filter: blur(90px);
-    border-radius: 2.5%;
+    border-radius: 2vw;
     display: grid; grid-template-rows: 13vh 8vh 8vh 8vh 8vh 8vh 8vh 8vh 8vh 8vh 8vh 8vh 8vh 8vh 8vh 8vh 8vh 8vh 8vh 8vh 8vh 8vh 8vh 8vh 8vh 8vh 8vh 8vh 8vh 8vh 8vh 8vh 8vh;
     overflow-y: scroll;
 }
@@ -77,34 +77,6 @@ body
     text-align: center;
     font-size: xx-large;
 }
-.todo
-{
-    width: 100%;
-    display: grid;
-    grid-template-columns: 2% 98%;
-    border-top: 2px solid #ffffff2c;
-}
-.content .last
-{
-    border-bottom: 2px solid #ffffff2c;
-}
-.todo .todo_value
-{
-    margin-left: 2vh;
-    background-color: transparent;
-    border: none;
-    outline: none;
-    font-size: x-large;
-}
-.todo .todo_checkbox
-{
-    accent-color: skyblue;
-}
-.todo:has(.todo_checkbox:checked)
-{
-    text-decoration: line-through 4px;
-}
-
 
 .gradient-shapes .shape1
 {
@@ -181,11 +153,6 @@ body
     {
         top: 5vh; left: 2vh; right: 2vh; bottom: 2vh;
     }
-    .todo
-    {
-        grid-template-columns: 3% 97%;
-    }
-
     #menu
     {
         width: 60%; height: 0vh; border-radius: 3%; z-index: 20; background-color: #ffffff15;; backdrop-filter: blur(10px);
@@ -209,11 +176,6 @@ body
     {
         top: 5vh; left: 3vh; right: 3vh; bottom: 2vh;
     }
-    .todo
-    {
-        grid-template-columns: 2.5% 97.5%;
-    }
-
     #menu
     {
         width: 50%; height: 0vh; border-radius: 3%; z-index: 20; background-color: #ffffff15;; backdrop-filter: blur(10px);
@@ -236,10 +198,6 @@ body
     .content
     {
         top: 5vh; left: 3.5vh; right: 3.5vh; bottom: 2vh;
-    }
-    .todo
-    {
-        grid-template-columns: 2% 98%;
     }
 
     #menu
@@ -265,10 +223,6 @@ body
     {
         top: 5vh; left: 3vh; right: 3vh; bottom: 2vh;
     }
-    .todo
-    {
-        grid-template-columns: 1.75% 98.25%;
-    }
 
     #menu
     {
@@ -292,10 +246,6 @@ body
     .content
     {
         top: 5vh; left: 3vh; right: 3vh; bottom: 2vh;
-    }
-    .todo
-    {
-        grid-template-columns: 1.5% 98.5%;
     }
 
     #menu
@@ -321,11 +271,6 @@ body
     {
         top: 5vh; left: 3vh; right: 3vh; bottom: 2vh;
     }
-    .todo
-    {
-        grid-template-columns: 1.25% 98.75%;
-    }
-
     #menu
     {
         width: 30%; height: 0vh; border-radius: 3%; z-index: 20; background-color: #ffffff15;; backdrop-filter: blur(10px);
@@ -348,10 +293,6 @@ body
     .content
     {
         top: 5vh; left: 3vh; right: 3vh; bottom: 2vh;
-    }
-    .todo
-    {
-        grid-template-columns: 1% 99%;
     }
 
     #menu
@@ -376,10 +317,6 @@ body
     .content
     {
         top: 5vh; left: 3vh; right: 3vh; bottom: 2vh;
-    }
-    .todo
-    {
-        grid-template-columns: 1% 99%;
     }
 
     #menu
