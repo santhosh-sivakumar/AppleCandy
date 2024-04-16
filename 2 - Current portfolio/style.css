@@ -1,0 +1,62 @@
+*
+{
+    margin: 0; padding: 0;
+}
+
+body
+{
+    background-image: linear-gradient(to right, #83a4d4, #b6fbff, #172b31, #0d191f);
+    background-size: 300%;
+    background-position: right;
+    width: 100vw; height: 100vh;
+}
+
+body .nav
+{
+    background-color: rgba(126, 126, 126, 0.253);
+    width: 100vw; height: 3vh;
+
+    display: grid; position: fixed;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+body .nav .left-icons
+{
+    font-size: 2.5vh; font-weight: bold;
+    padding-left: 10px;
+    text-align: left;
+}
+body .nav .title
+{
+    font-size: 2.5vh; font-weight: 600;
+    text-align: center;
+}
+body .nav .right-icons
+{
+    font-size: 2.5vh; font-weight: bold;
+    padding-right: 10px;
+    text-align: right;
+}
+
+body #menu
+{
+    background-color: rgba(126, 126, 126, 0.253);
+    height: 28vh; width: 33vh; padding: 2vw;
+
+    position: fixed;
+    top: 3.5vh; left: 0.5vw;
+    border-radius: 1.5vw;
+}
+body #menu .link
+{
+    color: black;
+    text-decoration: none;
+}
+
+.Halo
+{
+    font-family: 'HaloHandletter';
+}
+.Roboto
+{
+    font-family: 'Roboto';
+}
