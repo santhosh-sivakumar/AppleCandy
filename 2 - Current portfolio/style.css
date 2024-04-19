@@ -18,8 +18,8 @@ body
 
 .banner .title span
 {
-    background: linear-gradient(to right, #fc466b, #3f5efb, #fc466b, #3f5efb);
-    animation: name 5s linear infinite;
+    background: linear-gradient(to right, #3494e6, #ec6ead, #3494e6, #ec6ead);
+    animation: name 3s linear infinite;
 }
 
 .nav
