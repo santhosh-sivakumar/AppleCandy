@@ -1,9 +1,13 @@
 * { margin: 0; padding: 0; user-select: none;}
 
+html::-webkit-scrollbar
+{
+    scrollbar-color: black white;
+}
+
 body
 {
     background-color: rgb(173, 216, 253);
-    height: 300dvh;
 }
 
 .banner
@@ -51,6 +55,12 @@ body
 
 @media (max-width: 400px) 
 {
+
+    body
+    {
+        height: 196dvh;
+    }
+
     .banner
     {
         grid-template-rows: 1fr 1fr;
@@ -112,6 +122,26 @@ body
     .menu .links .link:hover { background-color: rgba(128, 128, 128, 0.151); }
     .menu .links .link:active { background-color: rgba(128, 128, 128, 0.253); }     
 
+    .body
+    {
+        overflow-y: scroll;
+        height: 96dvh;
+    }
+    .body::-webkit-scrollbar {
+        display: none;
+    }
+    .body .content
+    {
+        height: 100%;
+        background-color: rgba(128, 128, 128, 0.151);
+        scroll-snap-type: y mandatory;
+    }
+    .body .content .home
+    {
+        padding: 3vh;
+        height: 90vh;
+        background-color: rgb(58, 58, 58); color: white;
+    }
 }
 
 .roboto
