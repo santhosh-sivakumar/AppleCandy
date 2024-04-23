@@ -1,0 +1,49 @@
+* { margin: 0; padding: 0; user-select: none;}
+
+.Roboto { font-family: 'Roboto'; }
+.Pacifico { font-family: 'Pacifico', cursive; }
+.ibm { font-family: "IBM Plex Mono", monospace; }
+
+.nav { background-color: rgb(0, 0, 0); display: grid; }
+.nav .link { display: none; }
+
+.content { height: 95svh; overflow-y: scroll; scroll-behavior: smooth;}
+.content::-webkit-scrollbar{ display: none; }
+
+.banner { background-color: black; }
+
+.home { background-image: url("https://img.freepik.com/premium-photo/shapes-balancing-each-other-cube-cone-sphere-dark-theme_183270-202.jpg?ga=GA1.1.1374788263.1713892413&semt=ais"); background-position: center; background-size: cover;}
+
+@media (max-width: 400px) 
+{
+    .nav { height: 5vh; grid-template-columns: 1fr 1fr; border-bottom: 1px solid gray; }
+    .nav .phone { display: flex; justify-content: center; align-items: center; color: white; font-weight: 500;}
+    .nav .phone:hover{ background-color: rgb(20, 0, 20);}
+    .nav .phone:active { background-color: rgb(35, 0, 35);}
+
+    .content { scroll-snap-type: y mandatory;}
+
+    .banner { height: 100%; display: grid; grid-template-rows: 40% 50%; color: white; scroll-snap-align: start; }
+    .banner .title { display: flex; flex-direction: column; justify-content: center; align-items: center; font-size: xx-large;}
+    .banner .title span {   background: linear-gradient(to right, #6a83d8, #b06ab3, #6a83d8, #b06ab3); background-size: 280%; background-clip: text; color: transparent; animation: name-animation 3s linear infinite; }
+    .banner .logo { font-size: 25vh; display: flex; justify-content: center;}
+    .banner .logo span {  background: linear-gradient(to right, #4568dc, #b06ab3); background-clip: text; color: transparent; }
+
+    .menu { position: fixed; background-color: rgba(255, 255, 255, 0.116); backdrop-filter: blur(10px); top: 0; left: 0; right: 0; bottom: 0; display: none; grid-template-rows: 10% 5% 5% 5% 5% 5% 5%; color: white;}
+    .menu .c { display: flex; justify-content: center; align-items: center;}
+    .menu .link:hover { background-color: rgba(20, 0, 20, 0.2); font-size: large;}
+    .menu .link:active { background-color: rgba(35, 0, 35, 0.5);}
+    
+    .home { height: 100%; scroll-snap-align: start; color: white; font-size: x-large; }
+    .home .overlay{ background-color: rgba(0, 0, 0, 0.733); height: 100%; width: 100%; display: flex; flex-direction: column; justify-content: center; align-items: center; gap: 4%;}
+    .home .overlay .text { font-size: medium; }
+    .home .overlay ._1 { font-size: 7.5vw; }
+    .home .overlay ._1 span { background: linear-gradient(to right, #4568dc, #b06ab3); background-clip: text; color: transparent; font-weight: 500; }
+}
+
+
+@keyframes name-animation 
+{
+    0% { background-position: right; }    
+    100% { background-position: left; }
+}
